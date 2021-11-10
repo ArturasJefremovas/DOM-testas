@@ -1,0 +1,70 @@
+{
+    "Apartment": [
+        {
+            "id": "1",
+            "type": "flat",
+            "owner": {
+              "fullname": "Savininkas Savininkauskas",
+              "email": "savas@balandis.lt",
+              "phone": "+370 622 11111"
+            },
+            "roomCount": 4,
+            "squares": 70,
+            "address": {
+              "city": "Vilnius",
+              "country": "Lithuania",
+              "street": "Islandijos g.",
+              "number": "3"
+            },
+            "price": {
+              "amount": 150000,
+              "currency": "$"
+            },
+            "imgSrc": "https://q-xx.bstatic.com/xdata/images/hotel/840x460/264065130.jpg?k=58f2e2ec8f8002f9d1d9f4b74ee6410938fb4deb03df3dac10f723b73d03f56f&o="
+          },
+          {
+            "id": "2",
+            "type": "house",
+            "owner": {
+              "fullname": "Džordžas Džiunglius",
+              "email": "džordž@balandis.lt",
+              "phone": "+370 633 44444"
+            },
+            "roomCount": 6,
+            "squares": 170,
+            "address": {
+              "city": "Kaunas",
+              "country": "Lithuania",
+              "street": "Jėgerių g.",
+              "number": "66"
+            },
+            "price": {
+              "amount": 200000,
+              "currency": "€"
+            },
+            "imgSrc": "https://files.theinteriorsaddict.com/uploads/2016/09/MABC8986_Elm-Stone_IN03_1-Bed-Loft_Brooklyn_A3CMYK.jpg"
+          },
+          {
+            "id": "3",
+            "type": "cottage",
+            "owner": {
+              "fullname": "Langius Kreivauskas",
+              "email": "langius@balandis.lt",
+              "phone": "+370 666 77777"
+            },
+            "roomCount": 5,
+            "squares": 100,
+            "address": {
+              "city": "Vilnius",
+              "country": "Klaipėda",
+              "street": "Kopų g.",
+              "number": "7"
+            },
+            "price": {
+              "amount": 130000,
+              "currency": "€"
+            },
+            "imgSrc": "https://i.pinimg.com/originals/06/9f/3d/069f3dfdc8c691e60b420623e7718c8a.jpg"
+          }       
+    ]
+}
