@@ -13,7 +13,8 @@ class ApartmentGridComponent {
       this.render();
     }
   
-  
+    deleteApartment = id => API.deleteApartment(id, this.fetchApartments, this.showError);
+
     showError = msg => alert(msg);
   
     fetchApartments = () => setTimeout (() => {
@@ -22,7 +23,7 @@ class ApartmentGridComponent {
 
     wrapChild = element => {
         const wrapper = document.createElement('div');
-        wrapper.className = 'col-12 col-xs-3 col-sm-6 col-lg-4 col-xl-3';
+        wrapper.className = 'col-12 col-xs-3 col-sm-6 col-lg-9 col-xl-12';
         wrapper.append(element);
         return wrapper;
     }
@@ -42,7 +43,10 @@ class ApartmentGridComponent {
       } else if (apartments.length > 0) {
           this.htmlElement.innerHTML= '';
         const apartmentCardComponents =  apartments
-        .map(x => new ApartmentCardComponent(x))
+        .map(({id, ...apartmentProps}) => new ApartmentCardComponent({
+            ...apartmentProps,
+            onDelete: () => this.deleteApartment(id)
+        }))
         .map(x => x.htmlElement)
         .map(this.wrapChild);
         this.htmlElement.append(...apartmentCardComponents);
