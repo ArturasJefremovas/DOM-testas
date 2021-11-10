@@ -17,24 +17,24 @@ class API {
 
 const rodytiKlaidą = (klaida) => console.error('Klaida:', klaida)
 
-console.log('Siunčiami pradiniai duomenys...');
-API.fetchApartments(
-  (duomenys) => {
-    console.log('Gauti pradiniai duomenys', duomenys);
-    console.log('trinamas Elementas su id \'3\'...');
-    API.deleteApartment(
-      '3',
-      (duomenys) => {
-        console.log('Sėkimgai ištrinta', duomenys);
-        console.log('Siunčiami atnaujinti duomenys...');
-        API.fetchApartments(
-          (duomenys) => console.log('Gauti Atnaujinti duomenys', duomenys),
-          rodytiKlaidą
-        )
-      },
-      rodytiKlaidą
-    )
-  },
-  rodytiKlaidą
-)
+// console.log('Siunčiami pradiniai duomenys...');
+// API.fetchApartments(
+//   (duomenys) => {
+//     console.log('Gauti pradiniai duomenys', duomenys);
+//     console.log('trinamas Elementas su id \'3\'...');
+//     API.deleteApartment(
+//       '3',
+//       (duomenys) => {
+//         console.log('Sėkimgai ištrinta', duomenys);
+//         console.log('Siunčiami atnaujinti duomenys...');
+//         API.fetchApartments(
+//           (duomenys) => console.log('Gauti Atnaujinti duomenys', duomenys),
+//           rodytiKlaidą
+//         )
+//       },
+//       rodytiKlaidą
+//     )
+//   },
+//   rodytiKlaidą
+// )
 
