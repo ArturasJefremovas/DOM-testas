@@ -1,5 +1,5 @@
 {
-    "Apartment": [
+    "apartments": [
         {
             "id": "1",
             "type": "flat",
