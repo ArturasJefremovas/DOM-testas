@@ -55,8 +55,8 @@
           "roomCount": 5,
           "squares": 100,
           "address": {
-            "city": "Vilnius",
-            "country": "Klaipėda",
+            "city": "Klaipėda",
+            "country": "Lithuania",
             "street": "Kopų g.",
             "number": "7"
           },
@@ -65,6 +65,28 @@
             "currency": "€"
           },
           "imgSrc": "https://i.pinimg.com/originals/06/9f/3d/069f3dfdc8c691e60b420623e7718c8a.jpg"
+        },
+        {
+          "id": "4",
+          "type": "cottage",
+          "owner": {
+            "fullname": "Stalys Keturkojis",
+            "email": "medinis@balandis.lt",
+            "phone": "+370 666 88888"
+          },
+          "roomCount": 5,
+          "squares": 100,
+          "address": {
+            "city": "Vilnius",
+            "country": "Lithuania",
+            "street": "Pilies g.",
+            "number": "20"
+          },
+          "price": {
+            "amount": 180000,
+            "currency": "€"
+          },
+          "imgSrc": "https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555321978/shape/mentalfloss/screen_shot_2016-05-04_at_3.24.29_pm.png"
         }       
   ]
 }
